@@ -2,7 +2,7 @@
  * same-origin requests are adapted; all other fetches keep browser semantics. */
 (() => {
   const originalFetch = window.fetch.bind(window);
-  const manifest = originalFetch('chunks.json').then(r => {
+  const manifest = originalFetch('chunks.json', {cache: 'no-store'}).then(r => {
     if (!r.ok) throw new Error('Oyun dosya listesi yüklenemedi.');
     return r.json();
   });
@@ -21,7 +21,7 @@
         try {
           if (!reader) {
             if (part === file.parts.length) { controller.close(); return; }
-            const response = await originalFetch(file.parts[part++], options);
+            const response = await originalFetch(file.parts[part++] + '?v=' + file.sha256.slice(0, 16), options);
             if (!response.ok) throw new Error('Oyun dosyası indirilemedi. Sayfayı yeniden aç.');
             reader = response.body.getReader();
           }
