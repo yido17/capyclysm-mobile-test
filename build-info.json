@@ -1,14 +1,15 @@
 {
-  "version": "0.1.12",
+  "version": "0.1.13",
   "updated_platform": "web",
-  "web_version": "0.1.12",
+  "web_version": "0.1.13",
   "web_base_commit": "0f712733abb10e2416639a6f0adfedf77515cb25",
   "web_source_state": "base commit plus tested local changes",
-  "web_runtime_source_sha256": "ebc8dbc6cff400bb93ace16641dda09425801ee529aea575c05bbb3bf181f868",
-  "web_pck_sha256": "a34c9d3990beddb9e9d78b02420438f4d8e80753d09f353645c3419579da0000",
+  "web_runtime_source_sha256": "eb37bf8ee2a640243288f2a926c96244e6820bcbf9422516332ea2ccaa4ce2b8",
+  "web_pck_sha256": "d965c6038713dfd724f4adf1c9fcf070164512ed2d016c6d00b2ef17e7622290",
   "web_wasm_sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
   "android_version": "0.1.11",
   "android_version_code": 6,
   "android_gameplay_commit": "0b59bedc5e555c1b0407cd756858a5c00e3dee20",
-  "android_apk_sha256": "09d7a9f092caa39fbf85b203ec174387521913cf126f33c4581ac6da8959fd93"
+  "android_apk_sha256": "09d7a9f092caa39fbf85b203ec174387521913cf126f33c4581ac6da8959fd93",
+  "name": "CAPYTAN"
 }
