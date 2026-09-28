@@ -1,15 +1,45 @@
 {
-  "version": "0.1.14",
-  "updated_platform": "web",
-  "web_version": "0.1.14",
-  "web_base_commit": "0f712733abb10e2416639a6f0adfedf77515cb25",
-  "web_source_state": "base commit plus tested local changes",
-  "web_runtime_source_sha256": "3c59a00da41c0f9a75322e5f10769d8b69e9265c62b6b98cabd23e44bda4ebd8",
-  "web_pck_sha256": "2f66fc0f6700dfccd18c854cb8e919a1847fdc4325f6564975c3414a82e2675b",
+  "name": "CAPYTAN",
+  "version": "0.1.15",
+  "updated_platforms": [
+    "web",
+    "android"
+  ],
+  "source_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
+  "source_tree": "b820856fec5eb64dca1ced5dd402cc7e472d903d",
+  "web_version": "0.1.15",
+  "web_source_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
+  "web_gameplay_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
+  "web_source_state": "Exact committed runtime files; final follow-up changes packaging tests only",
+  "web_pck_sha256": "4fd3280b355cc5919ed12b2eed9818f27b356baf7a728f170a67070afa6f6bf9",
   "web_wasm_sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
-  "android_version": "0.1.11",
-  "android_version_code": 6,
-  "android_gameplay_commit": "0b59bedc5e555c1b0407cd756858a5c00e3dee20",
-  "android_apk_sha256": "09d7a9f092caa39fbf85b203ec174387521913cf126f33c4581ac6da8959fd93",
-  "name": "CAPYTAN"
+  "android_version": "0.1.15",
+  "android_version_code": 8,
+  "android_source_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
+  "android_gameplay_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
+  "android_package_id": "com.rildir.capyclysm.playtest",
+  "android_apk_sha256": "4d006ef5eb1b9d74a60777a7e4b91d33449f5930d060e3815331b1691172a326",
+  "android_signer_sha256": "7d19abc68937d8394897f4c73bec47bbf28b30e5b23124f429d7e01b297d65f5",
+  "godot_version": "4.7.2.stable.official.ed1daf0bf",
+  "demo": {
+    "animals": 16,
+    "last_wave": 15,
+    "bosses": {
+      "5": "bellhop",
+      "10": "receptionist",
+      "15": "bandleader"
+    }
+  },
+  "validation": {
+    "mobile_native_checks": 98,
+    "mobile_native_failures": 0,
+    "packaging_checks": 6,
+    "packaging_failures": 0,
+    "apk_signature_schemes": [
+      "v2",
+      "v3"
+    ],
+    "physical_device_tested": false
+  },
+  "prepared_utc": "2026-09-28T06:04:21.150883+00:00"
 }
