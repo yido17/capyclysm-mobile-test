@@ -1,24 +1,24 @@
 {
   "name": "CAPYTAN",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "updated_platforms": [
     "web",
     "android"
   ],
-  "source_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
-  "source_tree": "b820856fec5eb64dca1ced5dd402cc7e472d903d",
-  "web_version": "0.1.15",
-  "web_source_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
-  "web_gameplay_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
-  "web_source_state": "Exact committed runtime files; final follow-up changes packaging tests only",
-  "web_pck_sha256": "4fd3280b355cc5919ed12b2eed9818f27b356baf7a728f170a67070afa6f6bf9",
+  "source_commit": "9ad7605bf371d9c148be80d66e4a09e81b6ca13f",
+  "source_tree": "0a4f36451ffe2ebe5b678abc2d506f5f22840f32",
+  "web_version": "0.1.16",
+  "web_source_commit": "9ad7605bf371d9c148be80d66e4a09e81b6ca13f",
+  "web_gameplay_commit": "41a93f8b5c6ebee12d38038babc3960ad98153c3",
+  "web_source_state": "Runtime matches release commit. Final changes after export affect documentation, the excluded menu test and release audit manifest only.",
+  "web_pck_sha256": "b1555159ec002917b7540ebfe391d235d03678c7dab59f74e52e1c2b13645d30",
   "web_wasm_sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
-  "android_version": "0.1.15",
-  "android_version_code": 8,
-  "android_source_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
-  "android_gameplay_commit": "36c617a5c53bc92f624b3a9a1b3bf248bf720912",
+  "android_version": "0.1.16",
+  "android_version_code": 9,
+  "android_source_commit": "9ad7605bf371d9c148be80d66e4a09e81b6ca13f",
+  "android_gameplay_commit": "41a93f8b5c6ebee12d38038babc3960ad98153c3",
   "android_package_id": "com.rildir.capyclysm.playtest",
-  "android_apk_sha256": "4d006ef5eb1b9d74a60777a7e4b91d33449f5930d060e3815331b1691172a326",
+  "android_apk_sha256": "b68f7b4c1e17a3bb755a495a142d50ac325865492f42d34ea7a3630b0429426e",
   "android_signer_sha256": "7d19abc68937d8394897f4c73bec47bbf28b30e5b23124f429d7e01b297d65f5",
   "godot_version": "4.7.2.stable.official.ed1daf0bf",
   "demo": {
@@ -31,15 +31,48 @@
     }
   },
   "validation": {
-    "mobile_native_checks": 98,
+    "compiled_scripts": 373,
+    "compile_failures": 0,
+    "house_checks": 69,
+    "house_failures": 0,
+    "mobile_native_checks": 113,
     "mobile_native_failures": 0,
+    "touch_menu_checks": 888,
+    "touch_menu_failures": 0,
     "packaging_checks": 6,
     "packaging_failures": 0,
+    "release_audit_checks": 76,
+    "release_audit_failures": 0,
     "apk_signature_schemes": [
       "v2",
       "v3"
     ],
-    "physical_device_tested": false
+    "browser": {
+      "engine": "Chrome with software WebGL; disposable mobile context",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "coarse_pointer": true,
+      "flows": [
+        "landing version",
+        "APK reconstruction and hash",
+        "new run and roster",
+        "two-finger movement and dash",
+        "pause and resume",
+        "reload and saved-run continue"
+      ],
+      "page_errors": 0,
+      "console_errors": 0,
+      "failed_requests": 0,
+      "http_errors": 0
+    },
+    "physical_device_tested": false,
+    "limitations": [
+      "No physical iPhone/Safari run or Android install/performance test",
+      "Native test shutdown retains pre-existing ObjectDB warnings; browser software renderer emits performance warnings"
+    ]
   },
-  "prepared_utc": "2026-09-28T06:04:21.150883+00:00"
+  "prepared_utc": "2026-10-07T22:30:22.816996+00:00"
 }
